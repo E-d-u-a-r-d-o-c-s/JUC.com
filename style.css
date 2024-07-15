@@ -106,12 +106,19 @@ nav a {
 /* EDIÇÃO NA PÁGINA DE SUBSÍDIOS */
 
 img {
-box-shadow: 5px 5px 10px #000000;
-margin: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.600);
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.subimg {
+    text-align: center;
 }
 
 img:hover {
+    box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.600);
+    margin-left: 0px;
+    margin-bottom: -4px;
     width: 210px;
-    margin: 0px;
-    margin-left: 10px;
+    
 }
