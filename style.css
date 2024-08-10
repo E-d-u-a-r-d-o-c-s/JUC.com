@@ -82,14 +82,14 @@ nav a {
 
 }
 
-#sub {
-    background-color: #fc7a01;
-    margin-top: 10px;
-    border-radius: 10px;
-}
-
 #what:hover {
     background-color: #008332;
+}
+
+#sub {
+    background-color: #fc7a01;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 #sub:hover {
