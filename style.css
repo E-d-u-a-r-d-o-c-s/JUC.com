@@ -7,17 +7,11 @@ body {
 }
 
 .pag {
-    border-radius: 20px;
     background-color: #cacaca;
     min-width: 300px;
     max-width: 800px;
     margin: auto;
     padding: 0px 20px;
-}
-
-main {
-    background-image: url('imagem/juc\'ruz.png');
-    background-size: contain;
 }
 
 h1, h2 {
@@ -112,10 +106,9 @@ nav a {
 
 img {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.600);
-    margin: 10px;
-    margin-bottom: 20px;
+    margin: 5px;
     border-radius: 4px;
-    width: 199px;
+    width: 145px;
 }
 
 .subimg {
@@ -125,8 +118,8 @@ img {
 img:hover {
     box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.600);
     margin-left: 0px;
-    margin-bottom: 6px;
-    width: 209px;
+    margin-bottom: -5px;
+    width: 150px;
 }
 
 @media screen and (min-width: 778px){
@@ -135,9 +128,13 @@ img:hover {
         margin-bottom: 10px;
     }
 
+    .pag {
+        border-radius: 20px;
+    }
+
     img {
         width: 200px;
-        margin-bottom: 10px;
+        margin: 10px;
     }
 
     img:hover {
