@@ -61,32 +61,34 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
     overflow: hidden;
     text-decoration: none;
     font-size: 1.6em;
-    height: 60px;
+    padding: 10px;
     text-align: center;
     color: white;
 }
 
 nav>a>p {
     margin: 0px;
+    text-align: center;
     font-weight: bolder;
     font-size: 25px;
 }
+
 #fale {
-    padding-left: 10px;
-    transition: transform 500ms ease;
+    padding-left: 0px;
 }
+
 #imgWhat {
     height: 25px;
-    transition: transform 500ms ease;
+    padding-top: 8px;
 }
 
 #what {
     border-radius: 10px;
     background-color: #00a13e;
-
 }
 
 #what:hover {
@@ -95,13 +97,12 @@ nav>a>p {
 
 #sub {
     background-color: #fc7a01;
-    margin-bottom: 10px;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 #sub:hover {
     background-color: #e46e00;
-
 }
 
 #what:active {
@@ -140,6 +141,20 @@ nav>a>p {
 
     .pag {
         border-radius: 20px;
+    }
+
+    nav a {
+        flex-direction: row;
+    }
+
+    #fale {
+        padding-left: 10px;
+        transition: transform 500ms ease;
+    }
+    
+    #imgWhat {
+        padding-top: 0px;
+        transition: transform 500ms ease;
     }
 
     #what:hover {
