@@ -14,14 +14,11 @@ body {
     padding: 0px 20px;
 }
 
-h1,
-h2 {
+h1,h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-p,
-ol,
-ul {
+p,ol,ul {
     text-align: justify;
     line-height: 1.5em;
 }
@@ -61,14 +58,29 @@ abbr {
 
 
 nav a {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     text-decoration: none;
-    font-weight: bold;
     font-size: 1.6em;
-    padding: 10px;
+    height: 60px;
     text-align: center;
     color: white;
-    margin: auto;
+}
+
+nav>a>p {
+    margin: 0px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+#fale {
+    padding-left: 10px;
+    transition: transform 500ms ease;
+}
+#imgWhat {
+    height: 25px;
+    transition: transform 500ms ease;
 }
 
 #what {
@@ -102,7 +114,7 @@ nav a {
 
 /* EDIÇÃO NA PÁGINA DE SUBSÍDIOS */
 
-img {
+.banner {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.600);
     margin: 5px;
     border-radius: 4px;
@@ -113,7 +125,7 @@ img {
     text-align: center;
 }
 
-img:hover {
+.banner:hover {
     box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.600);
     margin-left: 0px;
     margin-bottom: -5px;
@@ -130,12 +142,24 @@ img:hover {
         border-radius: 20px;
     }
 
-    img {
+    #what:hover {
+        #fale {
+            transform: translateX(154%);
+            transition: transform 500ms;
+        }
+        #imgWhat {
+            height: 35px;
+            transform: translateX(521%);
+            transition: transform 500ms, height 500ms;
+        }
+    }
+
+    .banner {
         width: 200px;
         margin: 10px;
     }
 
-    img:hover {
+    .banner:hover {
         width: 210px;
         margin-bottom: -4px;
     }
